@@ -40,6 +40,8 @@ export default class Category{
         itemsTotalArr.forEach((element) => {
             if(element){
                 categoryTotal += element
+            } else {
+                categoryTotal = 0
             }
         })
         
