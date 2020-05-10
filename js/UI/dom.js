@@ -18,7 +18,8 @@ export const elements = {
     itemTotal: '.item_total',
     total: '.total',
     itemName: '.item_name',
-    cross: 'cross'
+    cross: 'cross',
+    input: 'input'
 }
 
 export const invalidInput = (el, error) => {

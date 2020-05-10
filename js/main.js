@@ -36,6 +36,9 @@ const addNewCategory = () => {
         // 4.- Update UI (UI/category)
         CategoryUI.renderCategory(nameCategory, idCategory)
 
+        // 5.- clear value input
+        CategoryUI.clearInput()
+
     }
 }
 
@@ -92,6 +95,9 @@ const addNewItem = e => {
 
         // 10.- Display categoy total
         CategoryUI.renderTotal(total, e)
+
+        // 11.- clear value input
+        CategoryUI.clearInput()
     }
 }
 

@@ -129,5 +129,17 @@ export const updateTotal = (total, e, categoryID) => {
     
 }
 
+export const clearInput = () => {
+
+    const inputs = document.getElementsByClassName(DOM.input)
+
+    const inputsarr = Array.from(inputs)
+
+    inputsarr.forEach(element => {
+        element.value = ''
+    });
+
+}
+
 
 
