@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    
+<div class="container">
+
+<div class="new_category_container">
+    <div class="input_container new_category">
+        <input type="text" class="input" placeholder="New category">
+        <button type="submit" class="btn" id="btn_new_category">Submit</button>
+    </div>
+    
+    <div class="error_label">
+        <span class="error_long">Must be shorter than 16</span>
+        <span class="error_empty">Must enter a name</span>
+    </div> 
+</div>
+
+<div class="categories">
+    <div class="category_container" id="1">
+        <div class="category">
+
+            <div class="delete_category"><i class="fas fa-times"></i></div>
+
+            <div class="items_list">
+
+                <h2 class="items_title">Uncategorized</h2>
+
+                <div class="items"></div>
+
+            </div>
+            
+            <div class="input_container new_item">
+                <input type="text" class="input input_new_item" placeholder="New item">
+                <input type="number" min="0" class="input input_quantity" placeholder="Qty">
+                <input type="number" min="0" class="input input_price" placeholder="$">
+                <button type="submit" class="btn btn-item">Submit</button>
+            </div>
+        </div>
+    </div>
+
+<!-- <div class="category_container">
+
+        <div class="category">
+            <div class="items_list">
+
+                <h2 class="items_title">Uncategorized</h2>
+
+                <div class="items">
+
+                    <div class="item">
+                        <span class="item_name">Pimenton verde</span>
+                        <div class="item_info">
+                            <span class="item_amount">x2</span>
+                            <span class="item_price">$6</span>
+                            <span class="item_delete"><i class="fas fa-trash"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <span class="item_name">Pimenton verde</span>
+                        <div class="item_info">
+                            <span class="item_amount">x999</span>
+                            <span class="item_price">$66666</span>
+                            <span class="item_delete"><i class="fas fa-trash"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <span class="item_name">Books</span>
+                        <div class="item_info">
+                            <span class="item_amount">x2</span>
+                            <span class="item_price">$6</span>
+                            <span class="item_delete"><i class="fas fa-trash"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <span class="item_name">Books</span>
+                        <div class="item_info">
+                            <span class="item_amount">x2</span>
+                            <span class="item_price">$6</span>
+                            <span class="item_delete"><i class="fas fa-trash"></i></span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="input_container new_item">
+                <input type="text" class="input input_new_item" placeholder="New item">
+                <input type="number" min="0" class="input input_quantity" placeholder="Qty">
+                <input type="number" min="0" class="input input_price" placeholder="$">
+                <button type="submit" class="btn btn-item">Submit</button>
+            </div>
+        </div>
+        
+        <div class="item_total">
+            <span>Total: $48</span>
+        </div>
+    </div> -->
+
+</div>
+
+<!-- <div class="total">
+    <span>$48</span>
+</div> -->
+
+</div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
