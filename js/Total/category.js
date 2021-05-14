@@ -29,13 +29,9 @@ export default class Category{
         let itemsTotalArr = []
         let categoryTotal = null
 
-        console.log(categoryTotal)
-
         el.forEach(element => {
             itemsTotalArr.push(element.total)
         });
-
-        console.log(itemsTotalArr)
         
         itemsTotalArr.forEach((element) => {
             if(element){

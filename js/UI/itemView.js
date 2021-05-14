@@ -88,7 +88,5 @@ export const crossOutItem = (e, target) => {
         currentItem = e.target
     }
 
-    console.log(currentItem)
-
     currentItem.classList.toggle(DOM.cross)
 }

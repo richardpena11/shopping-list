@@ -20,6 +20,7 @@ body{
     padding: 80px;
     padding-bottom: 40px;
     background: white;
+    border-radius: 24px;
     box-shadow: 20px 20px 30px 20px rgba(0, 0, 0, .2);
 }
 
@@ -40,10 +41,12 @@ body{
 
 .input_container .input{
     width: calc(100% - 100px);
-    border: 2px solid #000;
     height: 60px;
     font-size: 24px;
     padding: 10px 20px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
 }
 
 .input_container .btn{
@@ -51,7 +54,6 @@ body{
     background: #FE9C6F;
     color: #fff;
     border: none;
-    border: 2px solid #000;
     border-left: none;
     font-size: 24px;
     padding: 10px 10px;
@@ -76,7 +78,6 @@ body{
 }
 
 .category .items_list{
-    border: 2px solid #000;
     border-bottom: none;
 }
 
@@ -88,7 +89,6 @@ body{
 .category .delete_category i{
     font-size: 20px;
     padding: 5px 10px;
-    border: 2px solid #000;
     border-bottom: none;
 }
 
@@ -105,6 +105,10 @@ body{
     font-size: 36px;
 }
 
+.category .new_item input{
+  margin: 0 10px;
+}
+
 .category .new_item .btn{
     height: 60px;
 }
@@ -118,13 +122,13 @@ body{
     flex-wrap: nowrap;
     justify-content: space-between;
     line-height: 48px;
-    border-top: 2px solid rgba(0, 0, 0, .2);
     font-weight: 300;
     font-size: 24px;
 }
 
 .category .items .item .item_name{
-    display: inline-block;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .category .items .item .item_info{
@@ -176,12 +180,12 @@ body{
 }
 
 .total {
-    border-top: 2px solid rgba(0, 0, 0, .4);
     height: 100px;
     line-height: 100px;
     font-weight: 600;
     text-align: center;
     font-size: 30px;
+    border-top: 1px solid #000;
 }
 
 /* -------- JS Class -------- */
@@ -204,7 +208,7 @@ body{
 
 @media screen and (max-width: 860px){
     .container{
-        width: 100%;
+        width: 95%;
         padding: 60px 30px;
     }
 }
@@ -219,7 +223,6 @@ body{
     }
 
     .category .new_item .btn{
-        border: 2px solid #000;
         border-top: none;
         width: 100%;
     }
@@ -231,13 +234,11 @@ body{
     
     .category .new_item .input_price,
     .category .new_item .input_quantity{
-        border-top: none;
-        width: 50%;
+        width: 100%;
     }
 
-    .category .new_item .input_quantity{
-        border-right: none;
-        width: 50%;
+    .category .new_item .input_price {
+      border: none
     }
 
     .item_total{
@@ -285,7 +286,7 @@ body{
         display: flex;
         flex-wrap: wrap;
         line-height: 30px;
-        border-top: 2px solid rgba(0, 0, 0, .2);
+        border-top: 2px solid rgba(0, 0, 0, .5);
         font-weight: 300;
     }
     
